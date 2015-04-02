@@ -522,8 +522,8 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right; 
+	background-color: yellow;
 }
 
 .main-navigation ul {
@@ -887,8 +887,17 @@ object {
 12.3 PR Custom
 --------------------------------------------------------------*/
 
+.site-title, .site-description{
+	display: none;
+}
+
+#post-38 .entry-header{
+	display:none;
+}
+
 .sitelogo{
-	margin-left: 20px;
+	margin: 1em;
+	float: left;
 }
 
 
