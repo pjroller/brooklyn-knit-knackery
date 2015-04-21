@@ -15,6 +15,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
