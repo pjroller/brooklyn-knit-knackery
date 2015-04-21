@@ -524,6 +524,7 @@ a:active {
 	display: block;
 	float: right; 
 	background-color: yellow;
+	font-family: helvetica;
 }
 
 .main-navigation ul {
@@ -891,20 +892,27 @@ object {
 	display: none;
 }
 
-#post-38 .entry-header{
-	display:none;
-}
 
 .sitelogo{
 	margin: 1em;
 	float: left;
 }
 
-
 #masthead{
-	background-color: #cccccc;
+	background-color: white;
 }
 
+#content{
+	background-image: url(http://www.brooklynknitknackery.com/wp-content/uploads/2014/08/ClassicKnitter2.png);
+	}
+		
+.entry-header{
+		background-color: yellow;
+		margin-top: 12em;
+	}
 
 
-
+.entry-content{
+	background-color: white;
+	margin-top: 14em;
+}
