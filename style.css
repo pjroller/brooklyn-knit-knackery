@@ -522,7 +522,7 @@ a:active {
 
 .main-navigation {
 	float: right; 
-	margin-top: 130px;
+	margin-top: 134px;
 }
 
 .main-navigation ul {
@@ -541,8 +541,8 @@ a:active {
 	display: block;
 	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
-	color: #3399CC;
+	font-size: 22px;
+	color: #0889BC;
 }
 
 .main-navigation ul ul {
@@ -887,16 +887,39 @@ object {
 }
 
 /*--------------------------------------------------------------
-12.3 PR Custom
+12.3 PR Custom - home page
 --------------------------------------------------------------*/
 
 .site-title, .site-description{
 	display: none;
 }
 
+.page-id-38 #content{
+	background-image: url(http://www.brooklynknitknackery.com/wp-content/uploads/2015/04/yarn3.jpg);
+	background-repeat: repeat-x;
+	background-color: #1B3564;
+	}
+
+.page-id-38	h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 45px;
+	font-weight: normal;
+	margin: 10px 30px 20px 30px;
+	color: #A3D6B1;
+	}	
+	
+.page-id-38 p{
+	font-family: 'Quicksand', sans-serif;
+	margin: 20px 30px;
+	color: white;
+	}
+	
+/*--------------------------------------------------------------
+12.4 header and nav
+--------------------------------------------------------------*/
 
 .sitelogo{
-	margin: 1em;
+	margin: 1.25em;
 	float: left;
 }
 
@@ -904,23 +927,45 @@ object {
 	background-color: white;
 }
 
-#content{
-	background-image: url(http://www.brooklynknitknackery.com/wp-content/uploads/2015/04/yarn3.jpg);
-	background-repeat: repeat-x;
-	}
+.search-form{
+	position: absolute;
+	top: 50px;
+	right: 1.25em;
+}
+
+footer{
+	background-color: #0889BC;
+}
+
+.entry-footer{
+	display: none;
+}
+
+/*--------------------------------------------------------------
+12.4 Typography
+--------------------------------------------------------------*/
 		
 h1.entry-title{
 	color: white;
 	font-family: 'Crimson Text', serif;
 	font-size: 70px;
 	font-weight: normal;
-	margin-top: 3em;
-	margin-bottom: 0;
+	margin: 206px 0px 0px;
+	padding: 0 30px;
+	background-color: rgba(118,201,179,0.7);
+}
+
+h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 45px;
+	font-weight: normal;
+	margin: 20px 30px;
 }
  
-.search-form{
-	position: absolute;
-	top: 1em;
-	right: 1em;
+
+p{
+	font-family: 'Quicksand', sans-serif;
+	margin: 20px 30px;
 }
+
 
