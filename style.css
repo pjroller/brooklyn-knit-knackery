@@ -494,17 +494,18 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #067BAA;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: #5C4F79;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #F15E4D;
 }
 
 a:focus {
@@ -515,6 +516,9 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
+
+
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -542,7 +546,7 @@ a:active {
 	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 22px;
-	color: #1C3664;
+	color: #067BAA;
 }
 
 .main-navigation ul ul {
@@ -569,13 +573,15 @@ a:active {
 }
 
 .main-navigation li:hover > a {
-	color: #057BAA;
+	color: #F15E4D;
 }
 
 .main-navigation ul ul :hover > a {
+	color: #F15E4D;
 }
 
 .main-navigation ul ul a:hover {
+	color: #F15E4D;
 
 }
 
@@ -590,7 +596,11 @@ a:active {
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
-	color: #057BAA
+	color: #F15E4D;
+}
+
+.main-navigation a:visited {
+	color: #067BAA;
 }
 
 /* Small menu. */
@@ -899,7 +909,7 @@ object {
 }
 
 .page-id-38 #content{
-	background-image: url(http://www.brooklynknitknackery.com/wp-content/uploads/2015/04/yarn4.jpg);
+	background-image: url(http://www.brooklynknitknackery.com/wp-content/uploads/2015/05/Chevron2.jpg);
 	background-repeat: repeat-x;
 	background-color: #1B3564;
 	}
@@ -963,13 +973,28 @@ h1{
 	font-family: 'Crimson Text', serif;
 	font-size: 45px;
 	font-weight: normal;
-	margin: 20px 30px;
+	margin: 20px 30px 10px 30px;
+	color: #1C3664;
 }
  
+h2{
+	font-family: 'Crimson Text', serif;
+	font-size: 35px;
+	font-weight: normal;
+	margin: 20px 30px 10px 30px;
+	color: #1C3664;
+}
+
+h3{
+	font-family: 'Crimson Text', serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 10px 30px 10px 30px;
+	color: #1C3664;
+}
 
 p{
 	font-family: 'Quicksand', sans-serif;
 	margin: 20px 30px;
 }
-
 
