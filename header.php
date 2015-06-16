@@ -4,38 +4,59 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Brooklyn Knit-Knackery
+ * @package storefront
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> <?php storefront_html_tag_schema(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
-
-<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'brooklyn-knit-knackery' ); ?></a>
+	<?php
+	do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner" <?php if ( get_header_image() != '' ) { echo 'style="background-image: url(' . esc_url( get_header_image() ) . ');"'; } ?>>
+		
 		<!-- logo added by pr -->
 		<a href="http://www.brooklynknitknackery.com/"><img class="sitelogo" src="http://www.brooklynknitknackery.com/wp-content/uploads/2015/04/BklynKnitKnackeryLogo.png" alt="Brooklyn Knit-Knackery Logo"/></a>
-		
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
+		<div class="col-full">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'brooklyn-knit-knackery' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<?php
+			/**
+			 * @hooked storefront_skip_links - 0
+			 * @hooked storefront_social_icons - 10
+			 * @hooked storefront_site_branding - 20
+			 * @hooked storefront_secondary_navigation - 30
+			 * @hooked storefront_product_search - 40
+			 * @hooked storefront_primary_navigation - 50
+			 * @hooked storefront_header_cart - 60
+			 */
+			do_action( 'storefront_header' ); ?>
+
+		</div>
+		
+		
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<?php
+	/**
+	 * @hooked storefront_header_widget_region - 10
+	 */
+	do_action( 'storefront_before_content' ); ?>
+
+	<div id="content" class="site-content" tabindex="-1">
+		<div class="col-full">
+
+		<?php
+		/**
+		 * @hooked woocommerce_breadcrumb - 10
+		 */
+		do_action( 'storefront_content_top' ); ?>
